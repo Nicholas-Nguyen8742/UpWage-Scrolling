@@ -1,0 +1,122 @@
+module.exports = [  
+    {
+    "id": 1,
+    "city": "Orlando",
+    "state": "Florida",
+    "date": "01/01/2022",
+    "status": "closed",
+    "clientID": 18,
+    "timestamp": "1643196874",
+    "latitude": 28.54683312949944,
+    "longitude": -81.20393190532923,
+    "specialty": "Insurance"
+},
+{
+    "id": 2,
+    "city": "Orlando",
+    "state": "Florida",
+    "date": "05/29/2021",
+    "status": "open",
+    "clientID": 125,
+    "timestamp": "1621160789",
+    "latitude": 28.493695908677616,
+    "longitude": -81.4908367395401,
+    "specialty": "Roof Inspections"
+},
+{
+    "id": 3,
+    "city": "Orlando",
+    "state": "Florida",
+    "date": "03/04/2022",
+    "status": "open",
+    "clientID": 135,
+    "timestamp": "1622105308",
+    "latitude": 28.46057991261252,
+    "longitude": -81.56167387962341,
+    "specialty": "Outdoor Concert"
+},
+{
+    "id": 4,
+    "city": "Orlando",
+    "state": "Florida",
+    "date": "11/12/2021",
+    "status": "open",
+    "clientID": 199,
+    "timestamp": "1644101841",
+    "latitude": 28.396964149570845,
+    "longitude": -81.42509043216705,
+    "specialty": "Real Estate"
+},
+{
+    "id": 5,
+    "city": "Orlando",
+    "state": "Florida",
+    "date": "05/31/2021",
+    "status": "open",
+    "clientID": 85,
+    "timestamp": "1635548290",
+    "latitude": 28.539380150266677,
+    "longitude": -81.24422371387482,
+    "specialty": "Real Estate"
+},
+{
+    "id": 6,
+    "city": "Orlando",
+    "state": "Florida",
+    "date": "06/25/2021",
+    "status": "open",
+    "clientID": 104,
+    "timestamp": "1650841198",
+    "latitude": 28.6037390526665,
+    "longitude": -81.40709280967712,
+    "specialty": "Surveying"
+},
+{
+    "id": 7,
+    "city": "Orlando",
+    "state": "Florida",
+    "date": "07/20/2022",
+    "status": "closed",
+    "clientID": 118,
+    "timestamp": "1628892026",
+    "latitude": 28.60706404833486,
+    "longitude": -81.39342963695526,
+    "specialty": "Surveying"
+},
+{
+    "id": 8,
+    "city": "West Palm Beach",
+    "state": "Florida",
+    "date": "02/17/2022",
+    "status": "closed",
+    "clientID": 135,
+    "timestamp": "1643653737",
+    "latitude": 28.613798490489884,
+    "longitude": -81.47621870040894,
+    "specialty": "Construction Management"
+},
+{
+    "id": 9,
+    "city": "Orlando",
+    "state": "Florida",
+    "date": "08/18/2021",
+    "status": "open",
+    "clientID": 10,
+    "timestamp": "1634631338",
+    "latitude": 28.577587544621167,
+    "longitude": -81.47607922554016,
+    "specialty": "Special Events"
+},
+{
+    "id": 10,
+    "city": "Orlando",
+    "state": "Florida",
+    "date": "07/08/2022",
+    "status": "open",
+    "clientID": 71,
+    "timestamp": "1631371586",
+    "latitude": 28.678870258800945,
+    "longitude": -82.33189337302481,
+    "specialty": "Roof Inspections"
+}
+]
