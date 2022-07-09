@@ -4,7 +4,15 @@ export default function Filters({ data, features }) {
   return (
     <HStack spacing={features.length}>
       <Flex 
-      overflowX="auto"
+      scrollbarWidth="none"
+      overflow="auto"
+      sx={
+        { 
+       '::-webkit-scrollbar':{
+              display:'none'
+          }
+       }
+     }
       >
         {features.map((feature) => (
           <Tag
