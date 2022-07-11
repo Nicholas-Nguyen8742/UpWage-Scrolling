@@ -4,7 +4,6 @@ export default function Filters({ data, features }) {
   return (
     <HStack spacing={features.length}>
       <Flex 
-      scrollbarWidth="none"
       overflow="auto"
       sx={
         { 
