@@ -2,16 +2,14 @@ import { Tag, HStack, Flex } from "@chakra-ui/react";
 
 export default function Filters({ data, features }) {
   return (
-    <HStack spacing={features.length}>
-      <Flex 
-      overflow="auto"
-      sx={
-        { 
-       '::-webkit-scrollbar':{
-              display:'none'
-          }
-       }
-     }
+    <HStack paddingBottom={8} spacing={features.length}>
+      <Flex
+        overflow="auto"
+        sx={{
+          "::-webkit-scrollbar": {
+            display: "none",
+          },
+        }}
       >
         {features.map((feature) => (
           <Tag
