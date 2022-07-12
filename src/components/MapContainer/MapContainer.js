@@ -26,8 +26,8 @@ export default function MapContainer({ locations }) {
           style={{
             backgroundImage: `url(${customMarker})`,
             backgroundSize: 'cover',
-            width: '50px',
-            height: '50px',
+            width: '3rem',
+            height: '3rem',
             cursor: 'pointer'
           }}
           onClick={(e) => {
