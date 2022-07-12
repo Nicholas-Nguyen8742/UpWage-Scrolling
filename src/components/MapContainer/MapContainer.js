@@ -14,6 +14,8 @@ export default function MapContainer({ locations }) {
   const [popupInfo, setPopupInfo] = useState(null);
   
 /*Referenced below in return as {markers}*/
+/*Wrapped in useMemo hook for performance optimization so Map doesn't rerender*/
+/*More Info: https://visgl.github.io/react-map-gl/docs/get-started/tips-and-tricks#performance-with-many-markers*/
   const markers = useMemo(
     () =>
       locations.map((location) => (
@@ -51,11 +53,16 @@ export default function MapContainer({ locations }) {
         mapStyle="mapbox://styles/mapbox/streets-v9"
         mapboxAccessToken="pk.eyJ1IjoiYml6YXJybyIsImEiOiJjbDJpbGt2YW8wcDA4M2ltc24waWwwc3loIn0.eDej6DQjJv21gwde7qBPUQ"
       >
+        {/*Following four controls can be excluded, GeoLocate tool useful for UX*/}
         <GeolocateControl position="top-left" />
         <FullscreenControl position="top-left" />
         <NavigationControl position="top-left" />
         <ScaleControl />
+
+        {/*Referenced above anonymous function*/}
         {markers}
+
+        {/*PopUp Display*/}
         {popupInfo && (
           <Popup
             anchor="top"
@@ -63,6 +70,7 @@ export default function MapContainer({ locations }) {
             latitude={Number(popupInfo.latitude)}
             onClose={() => setPopupInfo(null)}
           >
+          {/*Popup <div> and contents can be styled depenent on Figma mockup*/}
             <div>
               <p>
                 {popupInfo.city}, {popupInfo.state}
