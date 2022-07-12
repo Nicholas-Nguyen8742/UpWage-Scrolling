@@ -13,7 +13,7 @@ import customMarker from '../../assets/customMarker.png';
 export default function MapContainer({ locations }) {
   const [popupInfo, setPopupInfo] = useState(null);
   
-
+/*Referenced below in return as {markers}*/
   const markers = useMemo(
     () =>
       locations.map((location) => (

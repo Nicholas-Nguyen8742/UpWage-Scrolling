@@ -8,7 +8,7 @@ function App() {
   return (
     <main>
       <Filters data={data} features={features.features} />
-        <MapContainer locations={features.locations} />
+      <MapContainer locations={features.locations} />
     </main>
   );
 }
